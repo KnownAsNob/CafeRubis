@@ -10,4 +10,16 @@ void setup()
   loadData();
 }
 
-product = new Product();
+ArrayList<Product> products = new ArrayList<Product>();
+ArrayList<Product> bill = new ArrayList<Product>();
+
+  void loadData()
+  {
+    Table Products = loadTable("cafeProducts.csv", "header");
+    
+    for (TableRow row: Products.rows())
+    {
+      Product product = new Product(row);
+      products.add(product);
+    }
+  }
