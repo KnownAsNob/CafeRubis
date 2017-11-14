@@ -6,8 +6,7 @@ class Product
     float price;
   }
   
-ArrayList<Product> products = new ArrayList<Product>();
-ArrayList<Product> bill = new ArrayList<Product>();
+
   
   
 }
