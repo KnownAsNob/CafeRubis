@@ -64,10 +64,21 @@ ArrayList<Product> bill = new ArrayList<Product>();
      POS_Y = POS_Y + 60;
     }
     
+    //Draw divider
     line(width/2, border, width/2, height - border);
+    
+    //Draw bill box
+    
+    fill(255);
+    stroke(0);
+    rect(width/2 + 30, border, width/2-30-border, height-border*2);
+      String T = "Your Bill";
+      textSize(15);
+      fill(0);
+      text(T, width/2 + 180, border+30);
   }
   
-  void mousePressed()
-  {
-    
-  }
+void displayBill()
+{
+
+}
