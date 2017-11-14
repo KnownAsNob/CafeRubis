@@ -30,7 +30,7 @@ ArrayList<Product> bill = new ArrayList<Product>();
   {
     for(Product prod: products)
     {
-     println();
+     println(prod.toString());
     }
   }
   
@@ -50,15 +50,24 @@ ArrayList<Product> bill = new ArrayList<Product>();
     for(Product prod: products)
     {
      String S = prod.toString();
+     float P = prod.toPrice();
      
      fill(254);
      stroke(0);
      rect(border + POS_X, border + POS_Y, width/3, 50);
          textAlign(LEFT, CENTER);
-         textSize(10);
+         textSize(15);
          fill(0);
-         text(S, border + POS_X, border+25 + POS_Y);
+         text(S, border + 20, border+25 + POS_Y);
+         text(P, border+ 200, border+25 + POS_Y);
      
      POS_Y = POS_Y + 60;
     }
+    
+    line(width/2, border, width/2, height - border);
+  }
+  
+  void mousePressed()
+  {
+    
   }

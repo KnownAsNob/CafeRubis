@@ -1,8 +1,21 @@
 class Product
 {
+  String name;
+  float price;
+  
   Product(TableRow row)
   {
-    String name = row.getString("Name");
-    float price = row.getFloat("Price");
+    name = row.getString("Name");
+    price = row.getFloat("Price");
+  }
+  
+  String toString()
+  {
+    return name;
+  }
+  
+  float toPrice()
+  {
+    return price;
   }
 }
