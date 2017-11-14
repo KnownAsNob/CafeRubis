@@ -2,11 +2,7 @@ class Product
 {
   Product(TableRow row)
   {
-    String name;
-    float price;
+    String name = row.getString("Name");
+    float price = row.getFloat("Price");
   }
-  
-
-  
-  
 }
